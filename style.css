@@ -19,6 +19,35 @@ body
   line-height: 1.5;
   overflow-x: hidden !important;
 }
+.hero
+{
+  position: relative;
+  margin: auto;
+  color: black;
+  max-width: 1366px;
+  height: 150px;
+}
+.content{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
+  font-style: normal;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.content h1{
+  font-size: 64px;
+  z-index: 100 !important;
+}
+.content p{
+  font-size: 24px;
+  width: 100%;
+  max-width: 650px;
+}
 ul
 {
   list-style: none;
@@ -182,6 +211,10 @@ p
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 0px;
+  }
+  .hero{
+    height: 100px;
   }
   .about{
     flex-direction: column;
@@ -217,13 +250,6 @@ p
     width: 100%;
   }
   .img-1 img{
-    /* position: relative;
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    /* top: 100px;
-    top: -400px;
-    left: 700px; */ 
     display: none;
   }
   .hero .navbar{
@@ -235,5 +261,46 @@ p
   }
   .navbar .logo{
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:600px){
+  body{
+    overflow-x: hidden;
+  }
+  .navbar{
+    width: 100%;
+    padding: 0px;
+  }
+  .navcontent{
+    flex-direction: column;
+    width: 100%;
+  }
+  .about .content2{
+    padding: 0;
+    margin: 0;
+  }
+  .about .content2 p{
+    font-size: 16px !important;
+  }
+  #home-c{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20rem;
+  }
+  #home-c .process{
+    text-align: center;
+    padding: 0px;
+  }
+  #work-a{
+    margin-top: 80rem;
+  }
+  .contactpage{
+    width: 100%;
+    text-align: center;
   }
 }
