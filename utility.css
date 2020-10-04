@@ -21,7 +21,7 @@
   left: 0px;
   padding: 0px 30px;
   transition: 0.5s;
-  z-index: 100;
+  z-index: 120;
 }
 .navcontent{
   display: flex;
@@ -86,8 +86,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: auto;
-  height: 1080px;
+  height: 100%;
   width: 100%;
   max-width: 1366px;
   margin-top: 5rem;
@@ -106,7 +107,8 @@
   height: 20px;
   background: #ccc;
   border-radius: 5px;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 0.7rem;
+}
 #myskill .progress div {
   height: 100%;
   color: white;
@@ -126,7 +128,7 @@
   justify-content: center;
   flex-wrap: wrap;
   text-align: left;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   max-width: 600px;
   /* background-color: black; */
 }
